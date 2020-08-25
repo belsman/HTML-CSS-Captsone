@@ -1,0 +1,21 @@
+header {
+  background-color: rgb(231, 83, 57);
+}
+
+header a {
+  color: #fff;
+}
+
+.nav-lists {
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem 0 0.75rem;
+}
+
+.nav-item {
+  margin: 0 1rem;
+}
+
+.nav-text {
+  display: none;
+}

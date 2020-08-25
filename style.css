@@ -2,6 +2,10 @@
   background-color: rgb(209, 89, 68);
 }
 
+.gray-bg {
+  background-color: rgb(180, 180, 180);
+}
+
 .form-container {
   background-color: rgba(180, 180, 180, 0.8);
   border-radius: 15px;
@@ -31,9 +35,8 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 80vh;
+  height: 90vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
-
 }

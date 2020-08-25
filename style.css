@@ -1,5 +1,10 @@
-header {
-  background-color: rgb(231, 83, 57);
+.tomato-bg {
+  background-color: rgb(209, 89, 68);
+}
+
+.form-container {
+  background-color: rgba(180, 180, 180, 0.8);
+  border-radius: 15px;
 }
 
 header a {
@@ -13,9 +18,22 @@ header a {
 }
 
 .nav-item {
-  margin: 0 1rem;
+  margin: 0 1.2rem;
 }
 
 .nav-text {
   display: none;
+}
+
+/* === Search section === */
+main {
+  background-image: url(./images/photo-1505843513577-22bb7d21e455.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
 }

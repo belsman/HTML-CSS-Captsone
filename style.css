@@ -72,6 +72,10 @@ main {
 
 /* === Media for Medium devices === */
 @media screen and (min-width: 768px) {
+  .show-case {
+    width: 75%;
+    margin: auto;
+  }
 
 }
 

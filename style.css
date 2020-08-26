@@ -14,6 +14,16 @@ body {
   background-color: rgb(180, 180, 180);
 }
 
+.white-bg {
+  background-color: #fff;
+}
+
+.feature-img {
+  width: 95px;
+  height: 95px;
+  margin-right: 6px;
+}
+
 .form-container {
   background-color: rgba(180, 180, 180, 0.8);
   border-radius: 15px;
@@ -70,11 +80,29 @@ main {
   color: inherit;
 }
 
+.flex {
+  display: flex;
+}
+
+.jc-space-btw {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
 /* === Media for Medium devices === */
 @media screen and (min-width: 768px) {
   .show-case {
     width: 75%;
     margin: auto;
+  }
+
+  .feature-img {
+    width: 130px;
+    height: 130px;
+    margin-right: 12px;
   }
 
 }
@@ -87,5 +115,11 @@ main {
 
   .how-to-card {
     flex-basis: 50%;
+  }
+
+  .feature-img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
   }
 }

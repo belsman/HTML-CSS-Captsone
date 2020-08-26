@@ -1,5 +1,13 @@
+body {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
 .tomato-bg {
   background-color: rgb(209, 89, 68);
+}
+
+.text-tomato {
+  color: rgb(209, 89, 68);
 }
 
 .gray-bg {
@@ -39,4 +47,41 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+/* == How to section == */
+.how-to-icon {
+  margin: 0 auto;
+  width: 200px;
+  height: 200px;
+  padding: 0.5rem 0;
+}
+
+.how-to-desc {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.3;
+}
+
+/* === Text link === */
+.text-link {
+  text-decoration-style: dotted;
+  text-decoration-color: #aaa;
+  text-decoration-line: underline;
+  color: inherit;
+}
+
+/* === Media for Medium devices === */
+@media screen and (min-width: 768px) {
+
+}
+
+/* === Media for Large devices === */
+@media screen and (min-width: 1024px) {
+  .how-to-container {
+    display: flex;
+  }
+
+  .how-to-card {
+    flex-basis: 50%;
+  }
 }

@@ -37,7 +37,6 @@ a {
 }
 
 .nav-lists {
-  justify-content: center;
   padding: 1.2rem 0 0.75rem;
 }
 
@@ -52,9 +51,7 @@ main {
   background-position: center;
   background-size: cover;
   height: 75vh;
-  display: flex;
   flex-direction: column;
-  justify-content: center;
 }
 
 /* == How to section == */
@@ -84,6 +81,10 @@ main {
 
 .jc-space-btw {
   justify-content: space-between;
+}
+
+.jc-space-center {
+  justify-content: center;
 }
 
 .align-center {

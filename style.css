@@ -214,6 +214,10 @@ main {
   background-color: #717171;
 }
 
+.remove-line a:hover {
+  text-decoration: none;
+}
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;

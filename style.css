@@ -138,6 +138,10 @@ main {
 }
 
 /* === Searched section === */
+#result-list-grid {
+  display: grid;
+  grid-gap: 13px 0;
+}
 
 .slider-container {
   position: relative;
@@ -242,6 +246,12 @@ main {
   .align-end-self {
     align-self: center;
   }
+
+  #result-list-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
 }
 
 /* === Media for Large devices === */
@@ -262,5 +272,10 @@ main {
     width: 200px;
     height: 200px;
     margin-right: 20px;
+  }
+
+  #result-list-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px 30px;
   }
 }

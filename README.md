@@ -5,7 +5,9 @@ online directory for real estate properties. The goal was to build the page to b
 [specification](https://www.behance.net/gallery/25563385/PatashuleKE).
 
 ![screenshot](./images/screenshot1.png)
+
 ![screenshot2](./images/screenshot2.png)
+
 ![screenshot3](./images/screenshot3.png)
 
 ## Live demo

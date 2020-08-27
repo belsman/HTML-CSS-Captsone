@@ -113,18 +113,37 @@
 
     <section id="result-list" class="p-2">
         <h2 class="h4 text-center font-weight-bolder text-secondary">Search Results Found 9 Properties</h2>
-        <div id="result-list-grid" class="p-md-4" style="border: 1px solid black">
-            <div class="searched-item" style="border: 1px solid red;">
-                <div class="image-frame">
-                    <a href="#"><img class="w-100" src="./images/house-1.jfif" alt="Property Image"></a>
+        <div id="result-list-grid" class="p-md-4">
+            <div class="searched-item tomato-bg">
+                <div class="slider-container">
+                    <div class="slides">
+                        <a href="#"><img class="w-100" src="./images/house-1.jfif" alt="Property Image"></a>
+                    </div>
+                    <div class="slides">
+                        <a href="#"><img class="w-100" src="./images/house-8.jfif" alt="Property Image"></a>
+                    </div>
+                    <div class="slides">
+                        <a href="#"><img class="w-100" src="./images/house-9.jfif" alt="Property Image"></a>
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="elipses text-center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                    <span class="rent-or-sale d-inline-block p-2 tomato-bg text-light">For Rent</span>
                 </div>
-                <div class="description">
-                    <ul class="property-attributes tomato-bg text-light">
-                        <li class="h5 my-0"><span class="key font-weight-bolder">NAME:</span> <span class="value">Bellox Real Estate.</span></li>
-                        <li><span class="key font-weight-bolder">LOCATION:</span> <span class="value"><i class="fas fa-map-marker-alt"></i> No 12 Dushe waje, Ung Mal Suleiman. Near some an undisclose place. Don't be afraid</span></li>
-                        <li><span class="key font-weight-bolder">BEDS:</span> <span class="value">5</span></li>
-                        <li><span class="key font-weight-bolder">BATHS:</span> <span class="value">5</span></li>
-                        <li><span class="key font-weight-bolder">AREA:</span> <span class="value">3 plots.</span></li>
+                <div class="description p-2">
+                    <ul class="property-attributes text-light">
+                        <li class="h5 my-0 mb-1"><span class="key font-weight-bolder">NAME:</span> <span class="value">Bellox Real Estate.</span></li>
+                        <li class="mb-1"><span class="key font-weight-bolder">LOCATION:</span> <span class="value"><i class="fas fa-map-marker-alt"></i> No 12 Dushe waje, Ung Mal Suleiman. Near some an undisclose place. Don't be afraid</span></li>
+                        <li class="mb-1"><span class="key font-weight-bolder">PRICE:</span> <span class="value">$3,000,000,000</span></li>
+                        <li class="mb-1"><span class="key font-weight-bolder">BEDS:</span> <span class="value">5</span></li>
+                        <li class="mb-1"><span class="key font-weight-bolder">BATHS:</span> <span class="value">5</span></li>
+                        <li class="mb-1"><span class="key font-weight-bolder">AREA:</span> <span class="value">3 plots.</span></li>
                     </ul>
                 </div>
             </div>
@@ -192,5 +211,39 @@
             </ul>
         </nav>
     </footer>
+    <script>
+        var slideIndex = 1;
+
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);      
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("slides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {slideIndex = 1}
+            if (n < 1) {slideIndex = slides.length}
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            
+            slides[slideIndex-1].style.display = "block";
+            dots[slideIndex-1].className += " active";
+        }
+    </script>
 </body>
 </html>

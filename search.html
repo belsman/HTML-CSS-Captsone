@@ -45,7 +45,7 @@
         
                     <div class="form-group m-2">
                         <label for="key-word" class="mr-2">Keyword</label>
-                        <input type="text" name="" class="form-control">
+                        <input type="text" name="" class="form-control" id="key-word">
                     </div>
         
                     <div class="form-group m-2">
@@ -79,7 +79,7 @@
         
                     <div class="form-group m-2">
                         <label for="address" class="mr-2">Address</label>
-                        <input type="text" class="form-control" placeholder="Address or Neigborhood">
+                        <input type="text" class="form-control" id="address" placeholder="Address or Neigborhood">
                     </div>
         
                     <div class="form-group m-2">
@@ -94,19 +94,40 @@
         
                     <div class="form-group m-2">
                         <label for="rooms" class="mr-2">Bed Rooms</label>
-                        <input class="form-control" type="number" name="" id="room" placeholder="Any">
+                        <input class="form-control" type="number" name="" id="rooms" placeholder="Any">
                     </div>
         
                     <div class="form-group m-2">
                         <label for="baths" class="mr-2">Bath Rooms</label>
-                        <input class="form-control" type="number" name="" id="max-price" placeholder="Any">
+                        <input class="form-control" type="number" name="" id="baths" placeholder="Any">
                     </div>
+
                     <div class="form-group">
                         <button class="btn btn-primary m-2">Search</button>
                         <button class="btn btn-warning text-white m-2"><i class="fas fa-eraser"></i> Clear Filter</button>
                     </div>
                 </div>
             </form>
+        </div>
+    </section>
+
+    <section id="result-list" class="p-2">
+        <h2 class="h4 text-center font-weight-bolder text-secondary">Search Results Found 9 Properties</h2>
+        <div id="result-list-grid" class="p-md-4" style="border: 1px solid black">
+            <div class="searched-item" style="border: 1px solid red;">
+                <div class="image-frame">
+                    <a href="#"><img class="w-100" src="./images/house-1.jfif" alt="Property Image"></a>
+                </div>
+                <div class="description">
+                    <ul class="property-attributes tomato-bg text-light">
+                        <li class="h5 my-0"><span class="key font-weight-bolder">NAME:</span> <span class="value">Bellox Real Estate.</span></li>
+                        <li><span class="key font-weight-bolder">LOCATION:</span> <span class="value"><i class="fas fa-map-marker-alt"></i> No 12 Dushe waje, Ung Mal Suleiman. Near some an undisclose place. Don't be afraid</span></li>
+                        <li><span class="key font-weight-bolder">BEDS:</span> <span class="value">5</span></li>
+                        <li><span class="key font-weight-bolder">BATHS:</span> <span class="value">5</span></li>
+                        <li><span class="key font-weight-bolder">AREA:</span> <span class="value">3 plots.</span></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </section>
 

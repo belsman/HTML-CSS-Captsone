@@ -100,6 +100,11 @@ main {
   margin: 0.5rem 0;
 }
 
+.property-attributes {
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
 /* === Prefooter and Footer === */
 .footer {
   font-size: 0.9rem;

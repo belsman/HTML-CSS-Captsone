@@ -222,6 +222,12 @@ main {
   to {opacity: 1}
 }
 
+/* == Detail styling == */
+.property-detail-grid {
+  display: grid;
+  grid-gap: 20px;
+}
+
 /* === Media for Medium devices === */
 @media screen and (min-width: 768px) {
   .header-contents {
@@ -252,6 +258,17 @@ main {
     grid-gap: 10px;
   }
 
+  /* == Detail styling == */
+  .property-feature {
+    padding: 15px 20px;
+    margin: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .property-detail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
 }
 
 /* === Media for Large devices === */
@@ -277,5 +294,9 @@ main {
   #result-list-grid {
     grid-template-columns: 1fr 1fr 1fr;
     padding: 15px 30px;
+  }
+
+  .map-image {
+    height: 600px;
   }
 }

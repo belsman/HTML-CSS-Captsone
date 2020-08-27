@@ -12,7 +12,7 @@ online directory for real estate properties. The goal was to build the page to b
 
 ## Live demo
 
-🔗 [Homeboze Website Clone]()
+🔗 [Homeboze Website Clone](https://rawcdn.githack.com/belsman/HTML-CSS-Captsone/3904fda71c4e8d380db1ab67a756f38468113605/index.html)
 
 ## Built With
 

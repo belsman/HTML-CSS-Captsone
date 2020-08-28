@@ -1,0 +1,280 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.tomato-bg {
+  background-color: rgb(209, 89, 68);
+}
+
+.text-tomato {
+  color: rgb(209, 89, 68);
+}
+
+.gray-bg {
+  background-color: rgb(180, 180, 180);
+}
+
+.light-gray-bg {
+  background-color: #f1f1f1;
+}
+
+.white-bg {
+  background-color: #fff;
+}
+
+.black-bg {
+  background-color: #111;
+}
+
+.feature-img {
+  width: 95px;
+  height: 95px;
+}
+
+.form-container {
+  background-color: rgba(180, 180, 180, 0.8);
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+
+.dynamic-bg {
+  background-color: rgb(209, 89, 68);
+}
+
+a {
+  color: inherit;
+}
+
+.nav-lists {
+  padding: 1.2rem 0 0.75rem;
+}
+
+.nav-list-item {
+  margin: 0 1.2rem;
+}
+
+/* === Search section === */
+.show-case-container {
+  background-image: linear-gradient(to bottom, rgba(50, 60, 55, 0.4) 10%, rgba(0, 0, 0, 0.9)), url(./images/photo-1505843513577-22bb7d21e455.jfif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 75vh;
+  flex-direction: column;
+}
+
+/* == How to section == */
+.how-to-icon {
+  margin: 0 auto;
+  width: 130px;
+  height: 130px;
+  padding: 0.5rem 0;
+}
+
+.how-to-desc {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.3;
+}
+
+/* === Misc === */
+.text-link {
+  text-decoration-style: dotted;
+  text-decoration-color: #aaa;
+  text-decoration-line: underline;
+  color: inherit;
+}
+
+.flex {
+  display: flex;
+}
+
+.jc-space-btw {
+  justify-content: space-between;
+}
+
+.jc-space-center {
+  justify-content: center;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.heading-5 {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+}
+
+.property-attributes {
+  font-size: 0.85rem;
+  line-height: 1.2;
+}
+
+/* === Prefooter and Footer === */
+.footer {
+  font-size: 0.9rem;
+}
+
+.mid-footer-box {
+  border: 1px solid #fff;
+  width: 50px;
+  height: 50px;
+  align-self: center;
+}
+
+.middle-nav-footer {
+  margin-top: 1rem;
+  color: #e8e8e8;
+}
+
+.mid-footer-icon {
+  vertical-align: -7px;
+}
+
+.mid-nav-item {
+  flex-basis: 33.333%;
+}
+
+.subscribe-input {
+  border: none;
+}
+
+.bottom-nav-footer {
+  background-color: #333;
+  color: #999;
+}
+
+.footer-brand-icon {
+  font-size: 20px;
+}
+
+/* === Searched section === */
+#result-list-grid {
+  display: grid;
+  grid-gap: 13px 0;
+}
+
+/* == District components of slider container == */
+.rent-or-sale {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+}
+
+/* Hoverables */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+.remove-line a:hover {
+  text-decoration: none;
+}
+
+/* == Detail styling == */
+.property-detail-grid {
+  display: grid;
+  grid-gap: 20px;
+}
+
+/* === Media for Medium devices === */
+@media screen and (min-width: 768px) {
+  .header-contents {
+    width: 75%;
+  }
+
+  .show-case {
+    width: 75%;
+    margin: auto;
+  }
+
+  .form-container {
+    padding: 30px 60px 30px 40px;
+  }
+
+  .dynamic-bg {
+    background-color: #0275d8;
+  }
+
+  .feature-img {
+    width: 130px;
+    height: 130px;
+    margin-right: 10px;
+  }
+
+  .flex-md {
+    display: flex;
+  }
+
+  .align-end-self {
+    align-self: center;
+  }
+
+  #result-list-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+  }
+
+  /* == Detail styling == */
+  .property-feature {
+    padding: 15px 20px;
+    margin: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
+  .property-detail-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* === Misc === */
+  .border-right-none {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+  }
+
+  .border-left-none {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+  }
+}
+
+/* === Media for Large devices === */
+@media screen and (min-width: 1024px) {
+  .header-contents {
+    width: 100%;
+  }
+
+  .how-to-container {
+    display: flex;
+  }
+
+  .how-to-card {
+    flex-basis: 50%;
+  }
+
+  .dynamic-bg {
+    background-color: rgb(209, 89, 68);
+  }
+
+  .feature-img {
+    width: 200px;
+    height: 200px;
+    margin-right: 20px;
+  }
+
+  #result-list-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 15px 30px;
+  }
+
+  .map-image {
+    height: 600px;
+  }
+}

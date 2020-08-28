@@ -295,6 +295,19 @@ main {
   .property-detail-grid {
     grid-template-columns: 1fr 1fr;
   }
+
+  /* === Misc === */
+  .border-right-none {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: none;
+  }
+
+  .border-left-none {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+  }
 }
 
 /* === Media for Large devices === */

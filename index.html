@@ -28,21 +28,19 @@
     </header>
     <main class="flex jc-space-center">
         <div class="show-case">
-            <section class="text-white p-2 mx-auto">
+            <div class="text-white p-2 mx-auto">
                 <h2 class="h3 font-weight-bolder text-center">Welcome to the homeboze Real Estate portal. The Best in the business</h2>
-                <div class="form-container my-3 px-2 py-3 text-left">
-                    <form action="./search.html">
-                        <div class="">
-                            <label for="q" class="text-dark font-weight-bolder">SEARCH BY KEY WORD:</label>
-                        </div>
-                        <div>
-                            <input class="form-control my-3" type="search" name="q" id="q">
-                            <button class="btn w-100 text-white mb-3 tomato-bg" type="submit">SEARCH</button>
+                <div class="form-container my-3 text-left">
+                    <form action="./search.html" class="">
+                        <label for="q" class="text-dark font-weight-bolder my-2">SEARCH BY KEY WORD:</label>
+                        <div class="d-flex flex-column flex-md-row">
+                            <input class="form-control my-1" type="search" name="q" id="q">
+                            <button class="btn text-white dynamic-bg my-1" type="submit">SEARCH</button>
                         </div>
                     </form>
                 </div>
-            </section>
-            <div class="mt-2 text-lg-center"><a href="#how-it-works" class="btn gray-bg ml-5 ml-lg-0">How it works</a></div>
+            </div>
+            <div class="mt-2 text-md-center"><a href="#how-it-works" class="btn gray-bg ml-5 ml-md-0 mr-md-5 ml-lg-0">How it works</a></div>
         </div>
     </main>
     <section id="how-it-works" class="px-2 py-3">
@@ -90,7 +88,7 @@
             </div>
         </div>
     </section>
-    <section class="features">
+    <div class="features">
         <ul>
             <li class="feature-card flex jc-space-btw align-center p-3 tomato-bg">
                 <article class="px-md-3 text-white">
@@ -126,8 +124,8 @@
                 <img class="feature-img rounded" src="./images/beautiful-asian-woman-using-smartphone-buying-online-shopping_7861-797.jpg" alt="SEARCH IMAGE">
             </li>
         </ul>
-    </section>
-    <section class="footer black-bg text-white p-3">
+    </div>
+    <div class="footer black-bg text-white p-3">
         <nav class="top-nav-footer d-flex flex-column flex-lg-row text-white text-center">
             <ul class="nav flex-column flex-md-row justify-content-center justify-content-lg-between flex-grow-1 border-top border-bottom my-3">
                 <li class="nav-item"><a href="#" class="nav-link">HOME</a></li>
@@ -175,7 +173,7 @@
                 </li>
             </ul>
         </nav>
-    </section>
+    </div>
     <footer class="footer bottom-nav-footer p-3">
         <div class="d-flex flex-column flex-lg-row justify-content-between">
             <ul class="d-flex mb-3 mb-lg-0">

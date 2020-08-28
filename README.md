@@ -1,4 +1,4 @@
-# HTML/CSS Capstone: homeboze (an online directory site for real estate)
+# Homeboze -- an online directory site for real estate.
 
 > This project was developed as a learning project, part of the Microverse curriculum. This project is about building an
 online directory for real estate properties. The goal was to build the page to be as identical in the somewhat vague

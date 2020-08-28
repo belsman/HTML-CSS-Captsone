@@ -1,9 +1,7 @@
 # Homeboze
-## An online directory site for real estate.
+## An online directory site for Real Estate.
 
-> This project was developed as a learning project, part of the Microverse curriculum. This project is about building an
-online directory for real estate properties. The goal was to build the page to be as identical in the somewhat vague
-[specification](https://www.behance.net/gallery/25563385/PatashuleKE).
+> This project was developed as a learning project, part of the Microverse curriculum. This project is about building a static page for an online directory of real estate properties. The goal was to build the page to be as identical in the somewhat vague [specification](https://www.behance.net/gallery/25563385/PatashuleKE).
 
 ![screenshot](./images/screenshot1.png)
 
@@ -13,7 +11,7 @@ online directory for real estate properties. The goal was to build the page to b
 
 ## Live demo
 
-🔗 [Homeboze Website Clone](https://rawcdn.githack.com/belsman/HTML-CSS-Captsone/3904fda71c4e8d380db1ab67a756f38468113605/index.html)
+🔗 [Homeboze Website Clone](https://rawcdn.githack.com/belsman/HTML-CSS-Captsone/73d98739c04d6e5c8f341c33f89f9bfb5496305c/index.html)
 
 ## Built With
 

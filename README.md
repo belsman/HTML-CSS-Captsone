@@ -11,7 +11,7 @@
 
 ## Live demo
 
-🔗 [Homeboze Website Clone](https://rawcdn.githack.com/belsman/HTML-CSS-Captsone/73d98739c04d6e5c8f341c33f89f9bfb5496305c/index.html)
+🔗 [Homeboze Website Clone](https://rawcdn.githack.com/belsman/HTML-CSS-Captsone/df34d0f3569b8b2e60faecb02082b0f5e9a544f6/index.html)
 
 ## Built With
 

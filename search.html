@@ -26,169 +26,171 @@
             </nav>
         </div>
     </header>
-    <section class="light-gray-bg my-4 p-3">
-        <div class="py-3">
-            <h2 class="h4 text-center font-weight-bolder text-secondary">Search Propery by including Keyword, Price, Location .....</h2>
-            <form action="." class="form-inline">      
-                <div class="d-flex flex-wrap jc-space-center p-3">
-                    <div class="d-flex">
-                        <div class="form-check m-2">
-                            <label class="form-check-label" for="sale">
-                                <input class="form-check-input" type="radio" id="sale" name="sale" value="sale">Sale
-                            </label>
+
+    <main>
+        <section class="light-gray-bg my-4 p-3">
+            <div class="py-3">
+                <h2 class="h4 text-center font-weight-bolder text-secondary">Search Propery by including Keyword, Price, Location .....</h2>
+                <form action="." class="form-inline">      
+                    <div class="d-flex flex-wrap jc-space-center p-3">
+                        <div class="d-flex">
+                            <div class="form-check m-2">
+                                <label class="form-check-label" for="sale">
+                                    <input class="form-check-input" type="radio" id="sale" name="sale" value="sale">Sale
+                                </label>
+                            </div>
+                            <div class="form-check m-2">
+                                <label class="form-check-label" for="rent">
+                                    <input class="form-check-input" type="radio" id="rent" name="rent" value="rent" checked> Rent
+                                </label>
+                            </div>
                         </div>
-                        <div class="form-check m-2">
-                            <label class="form-check-label" for="rent">
-                                <input class="form-check-input" type="radio" id="rent" name="rent" value="rent" checked> Rent
-                            </label>
+            
+                        <div class="form-group m-2">
+                            <label for="key-word" class="mr-2">Keyword</label>
+                            <input type="text" name="key-word" class="form-control" id="key-word">
+                        </div>
+            
+                        <div class="form-group m-2">
+                            <label for="city" class="mr-2">City</label>
+                            <select class="form-control"  name="city" id="city" required>
+                                <option value="" disabled selected>Select a City</option>
+                                <option value="0">Kaduna</option>
+                                <option value="1">Kano</option>
+                                <option value="2">Abuja</option>
+                                <option value="3">Katsina</option>
+                                <option value="4">Kogi</option>
+                                <option value="5">Sokoto</option>
+                                <option value="6">Zamfara</option>
+                                <option value="7">Borno</option>
+                                <option value="8">Yobe</option>
+                                <option value="9">Pleatue</option>
+                                <option value="10">Taraba</option>
+                            </select>
+                        </div>
+            
+                        <div class="form-group m-2">
+                            <label for="category" class="mr-2">Property Type</label>
+                            <select class="form-control" name="catergory" id="category" required>
+                                <option value="" disabled selected>Select a Category</option>
+                                <option value="0">Bungalow</option>
+                                <option value="1">Duplex</option>
+                                <option value="2">Face-Me-I-Face-You</option>
+                                <option value="3">General Compound Room and Palour</option>
+                            </select>
+                        </div>
+            
+                        <div class="form-group m-2">
+                            <label for="address" class="mr-2">Address</label>
+                            <input type="text" class="form-control" id="address" placeholder="Address or Neigborhood">
+                        </div>
+            
+                        <div class="form-group m-2">
+                            <label for="min-price" class="mr-2">Min. Price</label>
+                            <input class="form-control" type="number" name="max-price" id="min-price" placeholder="Any">
+                        </div>
+            
+                        <div class="form-group m-2">
+                            <label for="max-price" class="mr-2">Max. Price</label>
+                            <input class="form-control" type="number" name="min-price" id="max-price" placeholder="Any">
+                        </div>
+            
+                        <div class="form-group m-2">
+                            <label for="rooms" class="mr-2">Bed Rooms</label>
+                            <input class="form-control" type="number" name="beds" id="rooms" placeholder="Any">
+                        </div>
+            
+                        <div class="form-group m-2">
+                            <label for="baths" class="mr-2">Bath Rooms</label>
+                            <input class="form-control" type="number" name="baths" id="baths" placeholder="Any">
+                        </div>
+    
+                        <div class="form-group">
+                            <button class="btn btn-primary m-2">Search</button>
+                            <button class="btn btn-warning text-white m-2"><i class="fas fa-eraser"></i> Clear Filter</button>
                         </div>
                     </div>
-        
-                    <div class="form-group m-2">
-                        <label for="key-word" class="mr-2">Keyword</label>
-                        <input type="text" name="key-word" class="form-control" id="key-word">
-                    </div>
-        
-                    <div class="form-group m-2">
-                        <label for="city" class="mr-2">City</label>
-                        <select class="form-control"  name="city" id="city" required>
-                            <option value="" disabled selected>Select a City</option>
-                            <option value="0">Kaduna</option>
-                            <option value="1">Kano</option>
-                            <option value="2">Abuja</option>
-                            <option value="3">Katsina</option>
-                            <option value="4">Kogi</option>
-                            <option value="5">Sokoto</option>
-                            <option value="6">Zamfara</option>
-                            <option value="7">Borno</option>
-                            <option value="8">Yobe</option>
-                            <option value="9">Pleatue</option>
-                            <option value="10">Taraba</option>
-                        </select>
-                    </div>
-        
-                    <div class="form-group m-2">
-                        <label for="category" class="mr-2">Property Type</label>
-                        <select class="form-control" name="catergory" id="category" required>
-                            <option value="" disabled selected>Select a Category</option>
-                            <option value="0">Bungalow</option>
-                            <option value="1">Duplex</option>
-                            <option value="2">Face-Me-I-Face-You</option>
-                            <option value="3">General Compound Room and Palour</option>
-                        </select>
-                    </div>
-        
-                    <div class="form-group m-2">
-                        <label for="address" class="mr-2">Address</label>
-                        <input type="text" class="form-control" id="address" placeholder="Address or Neigborhood">
-                    </div>
-        
-                    <div class="form-group m-2">
-                        <label for="min-price" class="mr-2">Min. Price</label>
-                        <input class="form-control" type="number" name="max-price" id="min-price" placeholder="Any">
-                    </div>
-        
-                    <div class="form-group m-2">
-                        <label for="max-price" class="mr-2">Max. Price</label>
-                        <input class="form-control" type="number" name="min-price" id="max-price" placeholder="Any">
-                    </div>
-        
-                    <div class="form-group m-2">
-                        <label for="rooms" class="mr-2">Bed Rooms</label>
-                        <input class="form-control" type="number" name="beds" id="rooms" placeholder="Any">
-                    </div>
-        
-                    <div class="form-group m-2">
-                        <label for="baths" class="mr-2">Bath Rooms</label>
-                        <input class="form-control" type="number" name="baths" id="baths" placeholder="Any">
-                    </div>
+                </form>
+            </div>
+        </section>
 
-                    <div class="form-group">
-                        <button class="btn btn-primary m-2">Search</button>
-                        <button class="btn btn-warning text-white m-2"><i class="fas fa-eraser"></i> Clear Filter</button>
+        <section id="result-list" class="p-2">
+            <h2 class="h4 text-center font-weight-bolder text-secondary">Search Results Found 3 Properties</h2>
+            <div id="result-list-grid">
+                <div class="searched-item tomato-bg">
+                    <div class="slider-container">
+                        <div class="">
+                            <a href="./detail.html"><img class="w-100" src="./images/house-7.jfif" alt="Property Image"></a>
+                        </div>
+                        <span class="rent-or-sale d-inline-block p-2 tomato-bg text-light">For Rent</span>
+                    </div>
+                    <div class="description p-2">
+                        <ul class="property-attributes text-light">
+                            <li class="h5 my-0 mb-1"><span class="key font-weight-bolder">NAME:</span> <span class="value">Uskay Home.</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">LOCATION:</span> <span class="value"><i class="fas fa-map-marker-alt"></i> No 12 Dushe waje, Ung Mal Suleiman. Near some an undisclose place. Don't be afraid</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">PRICE:</span> <span class="value">$1,000,000,000</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">BEDS:</span> <span class="value">3</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">BATHS:</span> <span class="value">2</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">AREA:</span> <span class="value">3 plots.</span></li>
+                        </ul>
                     </div>
                 </div>
-            </form>
-        </div>
-    </section>
-
-    <section id="result-list" class="p-2">
-        <h2 class="h4 text-center font-weight-bolder text-secondary">Search Results Found 3 Properties</h2>
-        <div id="result-list-grid">
-            <div class="searched-item tomato-bg">
-                <div class="slider-container">
-                    <div class="">
-                        <a href="./detail.html"><img class="w-100" src="./images/house-7.jfif" alt="Property Image"></a>
+    
+                <div class="searched-item tomato-bg">
+                    <div class="slider-container">
+                        <div class="">
+                            <a href="./detail.html"><img class="w-100" src="./images/house-8.jfif" alt="Property Image"></a>
+                        </div>
+                        <span class="rent-or-sale d-inline-block p-2 tomato-bg text-light">For Sale</span>
                     </div>
-                    <span class="rent-or-sale d-inline-block p-2 tomato-bg text-light">For Rent</span>
+                    <div class="description p-2">
+                        <ul class="property-attributes text-light">
+                            <li class="h5 my-0 mb-1"><span class="key font-weight-bolder">NAME:</span> <span class="value">Kasbit and Adee Habitat</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">LOCATION:</span> <span class="value"><i class="fas fa-map-marker-alt"></i> No 12 Dushe waje, Ung Mal Suleiman. Near some an undisclose place. Don't be afraid</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">PRICE:</span> <span class="value">$500,000</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">BEDS:</span> <span class="value">2</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">BATHS:</span> <span class="value">2</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">AREA:</span> <span class="value">1 plots.</span></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="description p-2">
-                    <ul class="property-attributes text-light">
-                        <li class="h5 my-0 mb-1"><span class="key font-weight-bolder">NAME:</span> <span class="value">Uskay Home.</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">LOCATION:</span> <span class="value"><i class="fas fa-map-marker-alt"></i> No 12 Dushe waje, Ung Mal Suleiman. Near some an undisclose place. Don't be afraid</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">PRICE:</span> <span class="value">$1,000,000,000</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">BEDS:</span> <span class="value">3</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">BATHS:</span> <span class="value">2</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">AREA:</span> <span class="value">3 plots.</span></li>
-                    </ul>
+    
+                <div class="searched-item tomato-bg">
+                    <div class="slider-container">
+                        <div class="slides">
+                            <a href="./detail.html"><img class="w-100" src="./images/house-1.jfif" alt="Property Image"></a>
+                        </div>
+                        <div class="slides">
+                            <a href="./detail.html"><img class="w-100" src="./images/house-8.jfif" alt="Property Image"></a>
+                        </div>
+                        <div class="slides">
+                            <a href="./detail.html"><img class="w-100" src="./images/house-9.jfif" alt="Property Image"></a>
+                        </div>
+    
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+                        <div class="elipses text-center">
+                            <span class="dot" onclick="currentSlide(1)"></span>
+                            <span class="dot" onclick="currentSlide(2)"></span>
+                            <span class="dot" onclick="currentSlide(3)"></span>
+                        </div>
+                        <span class="rent-or-sale d-inline-block p-2 tomato-bg text-light">For Rent</span>
+                    </div>
+                    <div class="description p-2">
+                        <ul class="property-attributes text-light">
+                            <li class="h5 my-0 mb-1"><span class="key font-weight-bolder">NAME:</span> <span class="value">Bellox Real Estate.</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">LOCATION:</span> <span class="value"><i class="fas fa-map-marker-alt"></i> No 12 Dushe waje, Ung Mal Suleiman. Near some an undisclose place. Don't be afraid</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">PRICE:</span> <span class="value">$3,000,000,000</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">BEDS:</span> <span class="value">5</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">BATHS:</span> <span class="value">5</span></li>
+                            <li class="mb-1"><span class="key font-weight-bolder">AREA:</span> <span class="value">3 plots.</span></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-
-            <div class="searched-item tomato-bg">
-                <div class="slider-container">
-                    <div class="">
-                        <a href="./detail.html"><img class="w-100" src="./images/house-8.jfif" alt="Property Image"></a>
-                    </div>
-                    <span class="rent-or-sale d-inline-block p-2 tomato-bg text-light">For Sale</span>
-                </div>
-                <div class="description p-2">
-                    <ul class="property-attributes text-light">
-                        <li class="h5 my-0 mb-1"><span class="key font-weight-bolder">NAME:</span> <span class="value">Kasbit and Adee Habitat</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">LOCATION:</span> <span class="value"><i class="fas fa-map-marker-alt"></i> No 12 Dushe waje, Ung Mal Suleiman. Near some an undisclose place. Don't be afraid</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">PRICE:</span> <span class="value">$500,000</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">BEDS:</span> <span class="value">2</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">BATHS:</span> <span class="value">2</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">AREA:</span> <span class="value">1 plots.</span></li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="searched-item tomato-bg">
-                <div class="slider-container">
-                    <div class="slides">
-                        <a href="./detail.html"><img class="w-100" src="./images/house-1.jfif" alt="Property Image"></a>
-                    </div>
-                    <div class="slides">
-                        <a href="./detail.html"><img class="w-100" src="./images/house-8.jfif" alt="Property Image"></a>
-                    </div>
-                    <div class="slides">
-                        <a href="./detail.html"><img class="w-100" src="./images/house-9.jfif" alt="Property Image"></a>
-                    </div>
-
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                    <div class="elipses text-center">
-                        <span class="dot" onclick="currentSlide(1)"></span>
-                        <span class="dot" onclick="currentSlide(2)"></span>
-                        <span class="dot" onclick="currentSlide(3)"></span>
-                    </div>
-                    <span class="rent-or-sale d-inline-block p-2 tomato-bg text-light">For Rent</span>
-                </div>
-                <div class="description p-2">
-                    <ul class="property-attributes text-light">
-                        <li class="h5 my-0 mb-1"><span class="key font-weight-bolder">NAME:</span> <span class="value">Bellox Real Estate.</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">LOCATION:</span> <span class="value"><i class="fas fa-map-marker-alt"></i> No 12 Dushe waje, Ung Mal Suleiman. Near some an undisclose place. Don't be afraid</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">PRICE:</span> <span class="value">$3,000,000,000</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">BEDS:</span> <span class="value">5</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">BATHS:</span> <span class="value">5</span></li>
-                        <li class="mb-1"><span class="key font-weight-bolder">AREA:</span> <span class="value">3 plots.</span></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
+        </section>
+    </main>
     <div class="footer black-bg text-white p-3">
         <nav class="top-nav-footer d-flex flex-column flex-lg-row text-white text-center">
             <ul class="nav flex-column flex-md-row justify-content-center justify-content-lg-between flex-grow-1 border-top border-bottom my-3">

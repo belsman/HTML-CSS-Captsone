@@ -35,7 +35,7 @@ Web browser and access to internet
 1) [Download](Clone the repository to your machine)
 
 ```sh
-$ git clone https://github.com/belsman/Building-with-Responsive-Design/tree/develop
+https://github.com/belsman/HTML-CSS-Captsone.git
 ```
 
 2) Navigate to the project folder and execute the "index.html" file.
